@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro - Câmara Municipal de Limoeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CÂMARA MUNICIPAL DE LIMOEIRO - PE</h1>
+
+        <div id="timer">05:00</div>
+
+        <div class="controls">
+            <button onclick="iniciar()">▶ Iniciar</button>
+            <button onclick="pausar()">⏸ Pausar</button>
+            <button onclick="resetar()">🔄 Resetar</button>
+        </div>
+
+        <div class="config">
+            <input type="number" id="minutos" placeholder="Minutos" min="1">
+            <button onclick="definirTempo()">Definir Tempo</button>
+        </div>
+    </div>
+
+    <audio id="alerta" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
